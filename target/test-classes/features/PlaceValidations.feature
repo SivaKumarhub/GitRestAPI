@@ -12,20 +12,6 @@ Examples:
    | name | language | address|
    | Nikki | english  | banglore |
    | Kokku | telugu  | nandyal |
-   
-  @DeletePlace @Regession
-   Scenario: verify delete api functionality
-      Given delete place api payload
-      When user hits "DeletePlaceAPI" with http "POST" request
-      Then vaidate status code is "200"
-      And "status" in response body is "OK"
-      
-    @UpdatePlace @Regession
-   Scenario: verify Update Place api functionality
-      Given update place api payload
-      When user hits "UpdatePlaceAPI" with http "POST" request
-      Then vaidate status code is "200"
-      And "status" in response body is "OK"  
       
      @GetPlace @Regession
    Scenario: verify get Place api functionality
