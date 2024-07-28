@@ -25,4 +25,11 @@ Examples:
       Given update place api payload
       When user hits "UpdatePlaceAPI" with http "POST" request
       Then vaidate status code is "200"
-      And "status" in response body is "OK"    
+      And "status" in response body is "OK"  
+      
+     @GetPlace @Regession
+   Scenario: verify get Place api functionality
+      Given get place api payload
+      When user hits "GetPlaceAPI" with http "Get" request
+      Then vaidate status code is "200"
+      And "status" in response body is "OK"        
